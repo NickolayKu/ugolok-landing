@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('/fonts/TTFirsNeue-Medium.eot');
+    src: local('TT Firs Neue Medium'), local('TTFirsNeue-Medium'),
+        url('/fonts/TTFirsNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTFirsNeue-Medium.woff2') format('woff2'),
+        url('/fonts/TTFirsNeue-Medium.woff') format('woff'),
+        url('/fonts/TTFirsNeue-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('/fonts/TTFirsNeue-DemiBold.eot');
+    src: local('TT Firs Neue DemiBold'), local('TTFirsNeue-DemiBold'),
+        url('/fonts/TTFirsNeue-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTFirsNeue-DemiBold.woff2') format('woff2'),
+        url('/fonts/TTFirsNeue-DemiBold.woff') format('woff'),
+        url('/fonts/TTFirsNeue-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('/fonts/TTFirsNeue-Bold.eot');
+    src: local('TT Firs Neue Bold'), local('TTFirsNeue-Bold'),
+        url('/fonts/TTFirsNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTFirsNeue-Bold.woff2') format('woff2'),
+        url('/fonts/TTFirsNeue-Bold.woff') format('woff'),
+        url('/fonts/TTFirsNeue-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TT Firs Neue';
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+    text-align: center;
+    letter-spacing: 0.04em;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 31px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #6A6A6B;
+    margin-top: 0px;
+    margin-bottom: 84px;
+}
+
+.main-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #6A6A6B;
+}
+
+.main-text p {
+    margin-top: 0px;
+    margin-bottom: 11px;
+}
+
+.link {
+    display: inline-block;
+}
+
+a {
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
+
+.link-line {
+    position: absolute;
+    height: 2px;
+    background-color: #000000;
+    width: 192px;
+    float: right;
+    margin-top: 1px;
+    transition: all ease 0.1s;
+}
+
+.link:hover .link-line {
+    animation-duration: 0.5s;
+    animation-name: linewidth;
+}
+
+.subtract {
+    position: fixed;
+    bottom: 0px;
+    margin: auto;
+    width: 527px;
+    height: 293px;
+    z-index: -1;
+}
+
+@keyframes linewidth {
+    from {
+        transform: scaleX(0);
+    }
+  
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width: 1600px) {
+    .subtract {
+        width: 439px;
+        height: 244px;
+    }
+    h1 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 66px;
+    }
+    
+    .main-text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .link-line {
+        width: 162px;
+    }
+}
+
+@media (max-width: 1440px) {
+    h1 {
+        margin-bottom: 31px;
+    }
+
+    h2 {
+        margin-bottom: 69px;
+    }
+}
+
+@media (max-width: 768px) {
+    .subtract {
+        width: 351px;
+        height: 195px;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 55px;
+        margin-bottom: 22px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 66px;
+    }
+    
+    .main-text {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .link-line {
+        width: 147px;
+    }
+}
+
+@media (max-width: 570px) {
+    .subtract {
+        width: 293px;
+        height: 163px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 66px;
+    }
+    
+    .main-text {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .link-line {
+        width: 123px;
+    }
+}
+
+@media (max-width: 360px) {
+    .subtract {
+        width: 221px;
+        height: 123px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 14px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 66px;
+    }
+    
+    .main-text {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .link-line {
+        width: 100px;
+        height: 1px;
+    }
+}
